@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-github-battle-assignment/static/css/main.f7f40b70.css",
+    "main.js": "/react-github-battle-assignment/static/js/main.0ca9eadf.js",
+    "index.html": "/react-github-battle-assignment/index.html",
+    "main.f7f40b70.css.map": "/react-github-battle-assignment/static/css/main.f7f40b70.css.map",
+    "main.0ca9eadf.js.map": "/react-github-battle-assignment/static/js/main.0ca9eadf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7f40b70.css",
+    "static/js/main.0ca9eadf.js"
+  ]
+}
