@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding: 2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.mode-switch {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.active {
+  color: rgb(187, 46, 31);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.non-active {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.popular-menu {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.menu-item {
+  cursor: pointer;
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bg-dark {
+  background-color: #1c2022;
+  color: #dadada;
+  height: 100vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.bg-dark a {
+  color: rgb(236, 236, 236);
+}
+
+.bg-dark .non-active {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-dark .list,
+.bg-dark .battle-icons {
+  background-color: rgb(52, 52, 52);
+}
+.bg-dark .submit,
+.bg-dark input {
+  background-color: rgb(52, 52, 52);
+  color: rgb(196, 193, 193);
+}
+.bg-dark .battle-btn {
+  background-color: rgb(99, 97, 97);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list {
+  background-color: #e4e4e8;
+  padding: 1.2rem 1rem;
+  margin: 1rem;
+}
+.large {
+  width: 350px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info img {
+  width: 150px;
+}
+
+.info h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.popular-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.user {
+  color: rgb(244, 171, 77);
+}
+
+.star {
+  color: yellow;
+}
+
+.fork {
+  color: skyblue;
+}
+
+.issue {
+  color: rgb(245, 142, 159);
+}
+
+.battle {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.battle-icons {
+  font-size: 5rem;
+  background-color: rgb(225, 221, 221);
+  padding: 5rem;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+}
+
+.battle h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+}
+
+.battle p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.users {
+  color: rgb(249, 170, 102);
+}
+
+.jet {
+  color: gray;
+}
+
+.trophy {
+  color: goldenrod;
+}
+
+.submit,
+input {
+  padding: 0.5rem 2.4rem;
+  background-color: rgb(229, 227, 227);
+  border-radius: 0.2rem;
+  border: none;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.battle-btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.profileImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.final-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 450px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #dadada;
+  text-align: center;
+}
+.card-list {
+  text-align: left !important;
+}
+
+.avatar {
+  width: 200px;
 }
